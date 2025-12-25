@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak & Layanan - GKI Nazaret Wagom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        .glass-nav { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(12px); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+        }
+
+        .contact-hero {
+            background: linear-gradient(135deg, #4c1d95 0%, #2e1065 100%);
+            border-radius: 0 0 3rem 3rem;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(76, 29, 149, 0.1);
+            border-color: #ddd6fe;
+        }
+
+        .icon-circle {
+            width: 45px;
+            height: 45px;
+            background: #f5f3ff;
+            color: #4c1d95;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .category-title {
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            display: inline-block;
+        }
+
+        .category-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: #4c1d95;
+            border-radius: 2px;
+        }
+
+        .btn-call {
+            background: #4c1d95;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s;
+        }
+
+        .btn-call:hover {
+            background: #6d28d9;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="glass-nav sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-purple-900 text-white p-2 rounded-lg font-bold">GKI</div>
+                <div class="leading-none">
+                    <h1 class="font-bold text-gray-800">NAZARET WAGOM</h1>
+                    <p class="text-[10px] text-purple-700 font-bold uppercase tracking-widest">Klasis Fakfak - Papua Barat</p>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm text-gray-600 uppercase tracking-wide">
+                <a href="index.html" class="hover:text-purple-800 transition">Beranda</a>
+                <a href="tentang-kami.html" class="hover:text-purple-800 transition">Tentang Kami</a>
+                <a href="ibadah.html" class="hover:text-purple-800 transition">Ibadah</a>
+                <a href="warta.html" class="hover:text-purple-800 transition">Warta</a>
+                <a href="kontak.html" class="text-purple-800 border-b-2 border-purple-800 pb-1">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="contact-hero py-20 px-6 text-center text-white">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Layanan Informasi</h2>
+        <p class="text-purple-200 max-w-2xl mx-auto italic">"Melayani dengan kasih untuk pertumbuhan iman Jemaat GKI Nazaret Wagom."</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        
+        <section class="mb-20 grid md:grid-cols-3 gap-8 items-center bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100">
+            <div class="md:col-span-2">
+                <h3 class="category-title text-2xl font-bold text-gray-800 mb-6">Lokasi Gereja</h3>
+                <p class="text-gray-600 text-lg flex items-start gap-3">
+                    <i class="fas fa-location-dot mt-1 text-purple-800"></i>
+                    Jl. Nikolas Kabes Wagom, Fakfak - Papua Barat 
+                </p>
+            </div>
+            <div class="text-center md:text-right">
+                <div class="inline-block p-4 bg-purple-50 rounded-2xl border border-purple-100">
+                    <p class="text-xs font-bold text-purple-800 uppercase mb-1">Status Keanggotaan</p>
+                    <p class="text-sm text-gray-600 italic">Pendaftaran anggota baru harap menghubungi Majelis Jemaat. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h3 class="category-title text-xl font-bold text-gray-800 mb-8 uppercase tracking-wider">Pimpinan Majelis</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="contact-card p-6">
+                    <div class="icon-circle mb-4"><i class="fas fa-user-tie"></i></div>
+                    <p class="text-[10px] font-bold text-purple-600 uppercase mb-1">Ketua Majelis Jemaat</p>
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">Pdt. Jenny D. Izaac, S.Si. </h4>
+                    <a href="tel:085244133344" class="btn-call self-start"><i class="fas fa-phone"></i> 0852 4413 3344 </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h3 class="category-title text-xl font-bold text-gray-800 mb-8 uppercase tracking-wider">Koordinator Rayon</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="contact-card p-6">
+                    <p class="text-[10px] font-bold text-blue-600 uppercase mb-1">Rayon I (Kalvari)</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-4">Pnt. Arnold Deky R. Imon </h4>
+                    <a href="tel:085341590821" class="text-sm font-bold text-blue-800 hover:underline"><i class="fas fa-phone mr-1"></i> 0853 4159 0821 </a>
+                </div>
+                <div class="contact-card p-6">
+                    <p class="text-[10px] font-bold text-blue-600 uppercase mb-1">Rayon II (Diaspora)</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-4">Pnt. Nanda Y. Gultom </h4>
+                    <a href="tel:082397343783" class="text-sm font-bold text-blue-800 hover:underline"><i class="fas fa-phone mr-1"></i> 0823 9734 3783 </a>
+                </div>
+                <div class="contact-card p-6">
+                    <p class="text-[10px] font-bold text-blue-600 uppercase mb-1">Rayon III (Filadelfia)</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-4">Pnt. Ramly Makamban </h4>
+                    <a href="tel:081344030819" class="text-sm font-bold text-blue-800 hover:underline"><i class="fas fa-phone mr-1"></i> 0813 4403 0819 </a>
+                </div>
+                <div class="contact-card p-6">
+                    <p class="text-[10px] font-bold text-blue-600 uppercase mb-1">Rayon IV (Sion)</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-4">Pnt. Derfen A. Nubatonis </h4>
+                    <a href="tel:081247724758" class="text-sm font-bold text-blue-800 hover:underline"><i class="fas fa-phone mr-1"></i> 0812 4772 4758 </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h3 class="category-title text-xl font-bold text-gray-800 mb-8 uppercase tracking-wider">Pengurus Unsur</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="contact-card p-6 border-l-4 border-l-purple-800">
+                    <p class="text-[10px] font-bold text-gray-500 uppercase mb-1">Ketua PKB</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-4">Bpk. Yakobus Tandung </h4>
+                    <span class="text-sm font-semibold"><i class="fas fa-phone-flip mr-1 text-gray-400"></i> 0823 9956 3292 </span>
+                </div>
+                <div class="contact-card p-6 border-l-4 border-l-pink-600">
+                    <p class="text-[10px] font-bold text-gray-500 uppercase mb-1">Ketua PW</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-4">Ibu Ester Membua </h4>
+                    <span class="text-sm font-semibold"><i class="fas fa-phone-flip mr-1 text-gray-400"></i> 0813 2807 6857 </span>
+                </div>
+                <div class="contact-card p-6 border-l-4 border-l-blue-500">
+                    <p class="text-[10px] font-bold text-gray-500 uppercase mb-1">Ketua PAM</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-4">Sdr. Daniel Niweray </h4>
+                    <span class="text-sm font-semibold"><i class="fas fa-phone-flip mr-1 text-gray-400"></i> 0812 4040 8770 </span>
+                </div>
+                <div class="contact-card p-6 border-l-4 border-l-yellow-500">
+                    <p class="text-[10px] font-bold text-gray-500 uppercase mb-1">Ketua PAR</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-4">Ibu Nisly Pandaiya </h4>
+                    <span class="text-sm font-semibold"><i class="fas fa-phone-flip mr-1 text-gray-400"></i> 0813 4454 1861 </span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="category-title text-xl font-bold text-gray-800 mb-8 uppercase tracking-wider">Administrasi & Operasional</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="contact-card p-6 bg-slate-50">
+                    <div class="icon-circle mb-4 bg-white"><i class="fas fa-user-gear"></i></div>
+                    <p class="text-[10px] font-bold text-gray-500 uppercase mb-1">Admin Jemaat</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-2">Sdri. Dewi Matkussa </h4>
+                    <p class="text-sm font-bold text-purple-900">0852 5479 4468 </p>
+                </div>
+                <div class="contact-card p-6 bg-slate-50">
+                    <div class="icon-circle mb-4 bg-white"><i class="fas fa-desktop"></i></div>
+                    <p class="text-[10px] font-bold text-gray-500 uppercase mb-1">Operator Proyektor & Sound</p>
+                    <h4 class="text-base font-bold text-gray-800 mb-2">Bpk. Apri Yanto Mararay </h4>
+                    <p class="text-sm font-bold text-purple-900">0821 9880 3380 </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-sm opacity-50 mb-2">GKI Nazaret Wagom - Klasis Fakfak</p>
+            <p class="text-xs opacity-30">&copy; 2025 Majelis Jemaat. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
